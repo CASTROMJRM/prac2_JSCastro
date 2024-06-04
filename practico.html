@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica</title>
+</head>
+<body>
+    <p id="totalproduc"></p>
+    <p id="convertir"></p>
+    <script>
+        function producto(num1, num2){
+            return  num1 * num2;
+        }
+        let resultado = producto (10, 10)
+        document.getElementById("totalproduc").innerHTML = resultado;
+    </script>
+    <script>
+        function toCelsius(fahrenheit) {
+            return (5/9) * (fahrenheit-32);
+        }
+
+        let value = toCelsius(77)
+        document.getElementById("convertir").innerHTML = value;
+    </script>
+    
+        <p id="result"></p>
+    <script>
+        let text = "LA TEMPERARURA ES: " + Celsius(77) + " Celsius.";
+        function Celsius(fahrenheit){
+            return (5/9) * (fahrenheit-32);
+        }
+        document.getElementById("result").innerHTML = text;
+
+    </script>
+    
+</body>
+</html>
